@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Prestamos</title>
+</head>
+<body>
+    <h3>Prestamos</h3>
+    <form>
+        <tr th:each="prestamos: ${pestamos}">
+        <p>Nombre: <input th="${prestamos.nomcliente}" type="text" value=" " /> </p>
+        <p>DNI: <input th="${prestamos.dni}" type="text" value=" " /> </p>
+        <p>Prestamo: <input th="${prestamos.prestamo}" type="text" value=" " /> </p>
+        <p>Codigo: <input th="${prestamos.codigo}" type="text" value=" " /> </p>
+        <p>Nombre: <input th="{prestamos.nomprestamo}" type="text" value=" " /> </p>
+        <p>Fecha: <input th="${prestamos.fecha}" type="text" value=" " /> </p>
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>

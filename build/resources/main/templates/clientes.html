@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Clientes</title>
+</head>
+<body>
+    <h3>Registro de clientes</h3>
+    <form>
+        <tr th:each="clientes: ${clientes}">
+        <p>Nombre: <input th="${clientes.nomcliente}" type="text" value=" " /> </p>
+        <p>DNI: <input th="${clientes.dni}" type="text" value=" " /> </p>
+        <p>Domicilio: <input th="${clientes.domicilio}" type="text" value=" " /> </p>
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>
